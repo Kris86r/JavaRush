@@ -9,13 +9,14 @@ public class Solution {
         String warm = "на улице тепло";
         Scanner console = new Scanner(System.in);
         int temp = console.nextInt();
-        if (temp < 0) {
-            System.out.println(cold);
-        } else if (temp >= 0) {
+        if (temp >= 0) {
             System.out.println(warm);
+        } else {
+            System.out.println(cold);
         }
     }
 }
+
 
 
 
