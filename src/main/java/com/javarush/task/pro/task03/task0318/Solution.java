@@ -12,12 +12,12 @@ public class Solution {
         Scanner console = new Scanner(System.in);
         int hours = console.nextInt();
         int minutes = console.nextInt();
-        if (hours == 0 && minutes == 30) {
-            System.out.println(DONE);
-        } else if (hours < 1 && minutes < 30) {
-            System.out.println(NOT_YET);
-        } else if (hours > 0 || minutes > 30) {
+        if (hours > 0 || minutes > 30) {
             System.out.println(HORRIBLY_DONE);
+        } else if (minutes < 30) {
+            System.out.println(NOT_YET);
+        } else {
+            System.out.println(DONE);
         }
     }
 }
