@@ -10,14 +10,10 @@ public class Solution {
         int two = console.nextInt();
         int three = console.nextInt();
         int four = console.nextInt();
-        if (one > 0)
-            System.out.println(one);
-        if (two > 0)
-            System.out.println(two);
-        if (three > 0)
-            System.out.println(three);
-        if (four > 0)
-            System.out.println(four);
+        if (one > 0) System.out.println(one);
+        if (two > 0) System.out.println(two);
+        if (three > 0) System.out.println(three);
+        if (four > 0) System.out.println(four);
     }
 }
 
