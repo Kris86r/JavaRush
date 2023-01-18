@@ -8,7 +8,7 @@ public class Solution {
         int y = 4;
         int z = 0;
 
-        String digits = (x + y) + "" + z;
+        String digits = x + y + "" + z;
 
         System.out.println(digits);
     }
