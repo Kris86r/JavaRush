@@ -9,12 +9,10 @@ public class Solution {
         int num1 = console.nextInt();
         int num2 = console.nextInt();
         int num3 = console.nextInt();
-        if (num1 == num2 && num2 == num3) {
+        if (num1 == num2 && num1 == num3) {
             System.out.println(num1 + " " + num2 + " " + num3);
-        } else if (num1 == num2) {
-            System.out.println(num1 + " " + num2);
-        } else if (num1 == num3) {
-            System.out.println(num1 + " " + num3);
+        } else if (num1 == num2 || num1 == num3) {
+            System.out.println(num1 + " " + num1);
         } else if (num2 == num3) {
             System.out.println(num2 + " " + num3);
         }
