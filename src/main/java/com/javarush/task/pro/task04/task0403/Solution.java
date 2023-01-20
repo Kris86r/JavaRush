@@ -8,10 +8,11 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         int sum = 0;
         while (scanner.hasNextInt()) {
-            int num = scanner.nextInt();
-            sum += num;
+            sum += scanner.nextInt();
         }
-        System.out.println(sum);
+        if ("ENTER".equals(scanner.next())) {
+            System.out.println(sum);
+        }
     }
 }
 
