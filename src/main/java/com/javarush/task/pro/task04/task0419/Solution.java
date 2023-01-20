@@ -7,15 +7,11 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         int sum = 0;
-        if (number <= 0) {
-            System.out.println(0);
-        } else {
-            while (number > 0) {
-                sum += number;
-                number--;
-            }
-            System.out.println(sum);
+        while (number > 0) {
+            sum += number;
+            number--;
         }
+        System.out.println(sum);
     }
 }
 
