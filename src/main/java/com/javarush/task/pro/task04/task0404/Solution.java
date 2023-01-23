@@ -3,15 +3,15 @@ package com.javarush.task.pro.task04.task0404;
 
 public class Solution {
     public static void main(String[] args) {
-        int height = 0;
-        while (height < 5) {
-            int width = 0;
-            while (width < 10) {
+        int height = 5;
+        while (height > 0) {
+            int width = 10;
+            while (width > 0) {
                 System.out.print("Q");
-                width++;
+                width--;
             }
             System.out.println();
-            height++;
+            height--;
         }
     }
 }
