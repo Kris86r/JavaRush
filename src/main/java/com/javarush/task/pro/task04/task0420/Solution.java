@@ -2,7 +2,7 @@ package com.javarush.task.pro.task04.task0420;
 
 import java.util.Scanner;
 
-             
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println("Введите предполагаемое число");
@@ -12,15 +12,12 @@ public class Solution {
     public static void checkNumber(int number) {
         Scanner scanner = new Scanner(System.in);
         int inputNumber;
-        while (scanner.hasNextInt()) {
+        while (true) {
             inputNumber = scanner.nextInt();
-            if (inputNumber==number) {
-                System.out.println("Загадочное число равно " + inputNumber);
-                break;
-            } else {
-                System.out.println("Попробуй еще раз");
-            }
+            if (inputNumber == number) break;
+            System.out.println("Попробуй еще раз");
         }
+        System.out.println("Загадочное число равно " + inputNumber);
     }
 }
 
