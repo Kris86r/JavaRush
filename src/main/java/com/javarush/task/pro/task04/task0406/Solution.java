@@ -7,11 +7,8 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             String str = scanner.nextLine();
-            if (str.equals("enough")) {
-                break;
-            } else {
-                System.out.println(str);
-            }
+            if ("enough".equals(str)) break;
+            System.out.println(str);
         }
     }
 }
