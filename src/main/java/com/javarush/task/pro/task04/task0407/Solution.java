@@ -6,16 +6,15 @@ package com.javarush.task.pro.task04.task0407;
 
 public class Solution {
     public static void main(String[] args) {
-        int num = 1;
+        int num = 100;
         int sum = 0;
-        while (num <= 100) {
+        while (num >= 0) {
             if (num % 3 == 0) {
-                num++;
+                num--;
                 continue;
-            } else {
-                sum += num;
             }
-            num++;
+            sum += num;
+            num--;
         }
         System.out.println(sum);
     }
