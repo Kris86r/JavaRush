@@ -12,7 +12,9 @@ public class Solution {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                System.out.print(land);
+                if (i == 0 && j == 3) System.out.print(robot);
+                else if (i == 9) System.out.print(bug);
+                else System.out.print(land);
             }
             System.out.println();
         }
