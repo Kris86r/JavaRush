@@ -8,7 +8,7 @@ public class Solution {
         int y = 0;
         for (int i = 0; i < coordinates.length; i++) {
             if (coordinates[i] % 2 != 0) x += coordinates[i];
-            if (coordinates[i] % 2 == 0) y += coordinates[i];
+            else y += coordinates[i];
         }
         System.out.println("(" + x + ";" + y + ")");
     }
