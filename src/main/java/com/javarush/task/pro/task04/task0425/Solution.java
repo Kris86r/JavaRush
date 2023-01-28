@@ -12,9 +12,7 @@ public class Solution {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                if (i == 9) System.out.print(death);
-                else if (j == 3) System.out.print(hole);
-                else System.out.print(land);
+                System.out.print(i == 9 ? death : j == 3 ? hole : land);
             }
             System.out.println();
         }
