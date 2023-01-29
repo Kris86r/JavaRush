@@ -7,7 +7,8 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         int radius = scanner.nextInt();
         if (radius > 0) {
-            System.out.println((int) (3.14 * radius * radius));
+            int S = (int) (3.14 * radius * radius);
+            System.out.println(S);
         }
     }
 }
