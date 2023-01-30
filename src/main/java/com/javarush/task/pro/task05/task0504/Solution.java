@@ -6,11 +6,13 @@ public class Solution {
     public static int[] resultArray;
 
     public static void main(String[] args) {
-
-     for (int j = 0; j < firstArray.length; j++)
-           for (int k = 0; k < secondArray.length; k++)
-               resultArray = new int [] {firstArray[j], secondArray[k]};
-
+        resultArray = new int[firstArray.length + secondArray.length];
+        for (int j = 0; j < firstArray.length; j++) {
+            resultArray[j] = firstArray[j];
+        }
+        for (int k = 0; k < secondArray.length; k++) {
+            resultArray[k + firstArray.length] = secondArray[k];
+        }
         for (int i = 0; i < resultArray.length; i++) {
             System.out.print(resultArray[i] + ", ");
         }
