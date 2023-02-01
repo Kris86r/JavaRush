@@ -7,13 +7,8 @@ public class Solution {
 
     public static void main(String[] args) {
         resultArray = new int[firstArray.length + secondArray.length];
-        for (int j = 0; j < firstArray.length; j++) {
-            resultArray[j] = firstArray[j];
-        }
-        for (int k = 0; k < secondArray.length; k++) {
-            resultArray[k + firstArray.length] = secondArray[k];
-        }
         for (int i = 0; i < resultArray.length; i++) {
+            resultArray[i] = i < firstArray.length ? firstArray[i] : secondArray[i - firstArray.length];
             System.out.print(resultArray[i] + ", ");
         }
     }
