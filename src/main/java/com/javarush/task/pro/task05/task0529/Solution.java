@@ -1,5 +1,7 @@
 package com.javarush.task.pro.task05.task0529;
 
+import java.util.Arrays;
+
 public class Solution {
     public static String robotank = "☖";
     public static String empty = "_";
@@ -10,8 +12,14 @@ public class Solution {
 
     public static void main(String[] args) {
         for (int i = 0; i < field.length; i++) {
+            Arrays.fill(field[i], empty);
+        }
+        for (int i = 0; i < field.length; i++) {
+            int x = (int) (Math.random() * 10);
+            field[i][x] = robotank;
+        }
+        for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
-                field[i][j] = empty;
                 System.out.print(field[i][j]);
             }
             System.out.println();
