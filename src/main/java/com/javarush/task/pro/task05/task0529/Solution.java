@@ -9,6 +9,7 @@ public class Solution {
     public static int width = 30;
     public static int height = 10;
     public static String[][] field = new String[height][width];
+    public static int[][] bombs = new int[height][width];
 
     public static void main(String[] args) {
         for (int i = 0; i < field.length; i++) {
@@ -18,9 +19,21 @@ public class Solution {
             int x = (int) (Math.random() * 10);
             field[i][x] = robotank;
         }
+
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 System.out.print(field[i][j]);
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < bombs.length; i++) {
+            bombs[i] = Arrays.copyOf(bombs[i], 10);
+            Arrays.fill(bombs[i], 1);
+        }
+        for (int i = 0; i < bombs.length; i++) {
+            for (int j = 0; j < bombs[i].length; j++) {
+                System.out.print(bombs[i][j]);
             }
             System.out.println();
         }
