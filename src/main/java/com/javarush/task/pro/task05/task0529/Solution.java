@@ -12,6 +12,7 @@ public class Solution {
     public static int[][] bombs = new int[height][width];
 
     public static void main(String[] args) {
+
         for (int i = 0; i < field.length; i++) {
             Arrays.fill(field[i], empty);
         }
@@ -19,7 +20,17 @@ public class Solution {
             int x = (int) (Math.random() * 10);
             field[i][x] = robotank;
         }
-
+        for (int i = 0; i < bombs.length; i++) {
+            bombs[i] = Arrays.copyOf(bombs[i], 10);
+            Arrays.fill(bombs[i], 1);
+            for (int j = 0; j < bombs[i].length; j++) {
+            }
+        }
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[i][j].equals(robotank) && bombs[i][j] == 1) field[i][j] = hit;
+            }
+        }
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 System.out.print(field[i][j]);
@@ -27,16 +38,7 @@ public class Solution {
             System.out.println();
         }
 
-        for (int i = 0; i < bombs.length; i++) {
-            bombs[i] = Arrays.copyOf(bombs[i], 10);
-            Arrays.fill(bombs[i], 1);
-        }
-        for (int i = 0; i < bombs.length; i++) {
-            for (int j = 0; j < bombs[i].length; j++) {
-                System.out.print(bombs[i][j]);
-            }
-            System.out.println();
-        }
+
     }
 }
 
