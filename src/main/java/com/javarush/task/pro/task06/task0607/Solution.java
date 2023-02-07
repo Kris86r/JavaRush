@@ -8,7 +8,7 @@ public class Solution {
     }
 
     public static void signIn(String username) {
-        if (username.equals("user")) {
+        if ("user".equals(username)) {
             return;
         }
         System.out.println("Добро пожаловать " + username);
