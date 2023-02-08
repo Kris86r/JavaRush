@@ -30,14 +30,10 @@ public class Solution {
     public static void findDiablo() {
         System.out.println(getFirstPositionPhrase);
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
-            int num = scanner.nextInt();
-            if (num == diabloPosition) {
-                System.out.println(findDiabloPhrase);
-                return;
-            }
+        while (scanner.nextInt() != diabloPosition) {
             System.out.println(getPositionPhrase);
         }
+        System.out.println(findDiabloPhrase);
     }
 
     public static int getRandomNumber(int range) {
@@ -45,7 +41,7 @@ public class Solution {
     }
 
     public static void amigoLostLife() {
-        amigoLives -= 1;
+        amigoLives--;
     }
 
     public static void diabloLostLife() {
@@ -62,7 +58,6 @@ public class Solution {
 
     public static void battle() {
         while (amigoLives > 0 && diabloLives > 0) {
-            amigoAttacks();
             if (amigoAttacks() == diabloDefends()) {
                 System.out.println(diabloDefendPhrase);
                 amigoLostLife();
