@@ -10,8 +10,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] copy = Arrays.copyOf(array, array.length);
         Arrays.sort(copy);
-        int searching = Arrays.binarySearch(copy, element);
-        System.out.println(searching >= 0);
+        System.out.println(Arrays.binarySearch(copy, element) >= 0);
     }
 }
 
