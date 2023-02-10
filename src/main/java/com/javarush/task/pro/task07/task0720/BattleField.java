@@ -1,7 +1,7 @@
 package com.javarush.task.pro.task07.task0720;
 
 public class BattleField {
-    public static String galavirAttack = "враг наносит удап";
+    public static String galavirAttack = "враг наносит удар";
     public static String nimrodDefence = "вражеская атака отбита";
     public static String nimrodDestroy = "вражеский удар не выдержан";
     public static String galavirDefence = "наша атака успешно отражена врагом";

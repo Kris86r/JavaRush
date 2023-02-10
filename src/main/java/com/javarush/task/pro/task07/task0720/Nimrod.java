@@ -8,10 +8,14 @@ public class Nimrod {
 
 
     public void defend(int num) {
-        health -= num;
+        health -= applyShield(num);
     }
 
     public int attack() {
         return rocket;
+    }
+
+    public byte applyShield(int num) {
+        return (byte) num;
     }
 }
