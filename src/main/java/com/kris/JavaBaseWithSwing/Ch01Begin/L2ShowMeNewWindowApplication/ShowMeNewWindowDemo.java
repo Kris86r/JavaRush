@@ -4,8 +4,8 @@ import javax.swing.*;
 
 public class ShowMeNewWindowDemo {
     public static void main(String[] args) {
-        String title = "message";
-        String text = "Kris";
+        String title = "Сообщение";
+        String text = "Продолжаем изучать Java";
         JOptionPane.showMessageDialog(null, text, title, JOptionPane.QUESTION_MESSAGE);
     }
 }
