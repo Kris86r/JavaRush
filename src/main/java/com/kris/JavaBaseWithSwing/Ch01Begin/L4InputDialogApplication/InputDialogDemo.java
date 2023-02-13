@@ -1,8 +1,8 @@
-package com.kris.swing.task0105;
+package com.kris.JavaBaseWithSwing.Ch01Begin.L4InputDialogApplication;
 
 import javax.swing.*;
 
-public class InputDialogApplication {
+public class InputDialogDemo {
     public static void main(String[] args) {
         String text;
         text = JOptionPane.showInputDialog("Введите текст:");

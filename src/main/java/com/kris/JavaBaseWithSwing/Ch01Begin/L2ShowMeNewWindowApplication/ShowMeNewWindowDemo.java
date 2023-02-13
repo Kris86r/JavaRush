@@ -1,8 +1,8 @@
-package com.kris.swing.task0102;
+package com.kris.JavaBaseWithSwing.Ch01Begin.L2ShowMeNewWindowApplication;
 
 import javax.swing.*;
 
-public class ShowMeNewWindowApplication {
+public class ShowMeNewWindowDemo {
     public static void main(String[] args) {
         String title = "message";
         String text = "Kris";

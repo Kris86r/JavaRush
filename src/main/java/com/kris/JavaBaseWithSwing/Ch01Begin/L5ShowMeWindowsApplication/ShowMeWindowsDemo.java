@@ -1,8 +1,8 @@
-package com.kris.swing.task0106;
+package com.kris.JavaBaseWithSwing.Ch01Begin.L5ShowMeWindowsApplication;
 
 import javax.swing.*;
 
-public class ShowMeWindowsApplication {
+public class ShowMeWindowsDemo {
     public static void main(String[] args) {
         String title, text;
         title = JOptionPane.showInputDialog(null, "Имя для окна", "Название", JOptionPane.WARNING_MESSAGE);
