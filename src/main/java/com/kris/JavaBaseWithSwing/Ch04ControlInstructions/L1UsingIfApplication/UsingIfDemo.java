@@ -15,11 +15,11 @@ public class UsingIfDemo {
         number = Integer.parseInt(input);
         if (number % 2 == 0) {
             img = new ImageIcon("C:/img/even.jpg");
-            txt = "Число " + number + " - чётное!";
+            txt = "Число " + number + " - четное!";
             title = "Четное число";
         } else {
             img = new ImageIcon("C:/img/odd.jpg");
-            txt = "Число " + number + " - нечётное!";
+            txt = "Число " + number + " - нечетное!";
             title = "Нечетное число";
         }
         JOptionPane.showMessageDialog(null, txt, title, JOptionPane.PLAIN_MESSAGE, img);
