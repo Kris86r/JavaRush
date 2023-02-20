@@ -1,4 +1,4 @@
-package com.kris.JavaBaseWithSwing.Ch01Begin.L1ShowMeAWindowApplication;
+package com.kris.JavaBaseWithSwing.Ch01Begin.L01ShowMeAWindowApplication;
 
 import javax.swing.*;
 
